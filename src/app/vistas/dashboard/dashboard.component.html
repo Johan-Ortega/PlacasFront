@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="container">
+
+    <h3>Lista de Placas</h3><br>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Plates_license</th>
+                <th scope="col">Score</th>
+                <th scope="col">DScore</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let placa of placas">
+                <th scope="row">{{ placa.id}}</th>
+                <td>{{ placa.id }}</td>
+                <td>{{ placa.license_plate }}</td>
+                <td>{{ placa.score }}</td>
+                <td>{{ placa.dscore }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
